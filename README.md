@@ -1,4 +1,4 @@
-🎧 UrbanSound Guardian – AI Noise Detection Agent
+**🎧 UrbanSound Guardian – AI Noise Detection Agent**
 
 UrbanSound Guardian is an AI-driven agent that analyzes urban noise, classifies sound types, scores severity, and provides actionable recommendations.
 Built using Python, FastAPI, and a lightweight ML model.
@@ -17,11 +17,11 @@ Built using Python, FastAPI, and a lightweight ML model.
 
 ⚡ Fast, lightweight, deployable
 
-🏗️ Architecture Overview
+🏗️ **Architecture Overview**
 User Input (filename) ->FASTAPI Web App->UrbanSoundAgent->Final Analysis JSON Output
  
 
-📦 Project Structure
+📦 **Project Structure**
 UrbanSoundGuardian/
 │
 ├── webapp.py               # FastAPI Web App
@@ -34,7 +34,7 @@ UrbanSoundGuardian/
     ├── model.py            # ML classifier
     └── audio_features.py   # Synthetic feature generator
 
-🛠️ Installation
+🛠️ **Installation**
 1. Clone the repository
 git clone https://github.com/yourusername/UrbanSoundGuardian.git
 cd UrbanSoundGuardian
@@ -49,7 +49,7 @@ pip install -r requirements.txt
 4. (Optional) Retrain ML model
 python train.py
 
-🚀 Run the Web App
+🚀 **Run the Web App**
 uvicorn webapp:app --reload
 
 
@@ -59,7 +59,7 @@ Web UI: http://127.0.0.1:8000
 
 API Docs: http://127.0.0.1:8000/docs
 
-🔍 Example Output
+🔍 **Example Output**
 {
   "location": "Unknown",
   "timestamp_utc": "2025-12-01T15:26:37.659669",
@@ -72,7 +72,7 @@ API Docs: http://127.0.0.1:8000/docs
   "recommended_tip_for_citizens": "Ensure construction follows permitted timings and uses noise barriers."
 }
 
-🎯 Why This Project Is Effective
+🎯 **Why This Project Is Effective**
 
 Clear ML pipeline (training → prediction → output)
 
@@ -98,7 +98,7 @@ Live dashboard
 
 Gemini-powered reasoning agent
 
-🏁 Conclusion
+🏁 **Conclusion**
 
 UrbanSound Guardian shows how a compact AI agent can:
 

@@ -3,7 +3,6 @@
 UrbanSound Guardian is an **AI-driven agent** that analyzes urban noise, classifies sound types, scores severity, and provides actionable recommendations.  
 Built using **Python, FastAPI, and a lightweight ML model**, this project showcases a clean, production-ready AI agent workflow.
 
----
 
 ## 🚀 **Key Features**
 
@@ -14,7 +13,6 @@ Built using **Python, FastAPI, and a lightweight ML model**, this project showca
 - 🕒 **Timestamp + location context**
 - ⚡ **Fast, lightweight, and deployable anywhere**
 
----
 
 ## 🏗️ **Architecture Overview**
 

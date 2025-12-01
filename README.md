@@ -1,4 +1,4 @@
----🎧 UrbanSound Guardian – AI Noise Detection Agent
+🎧 UrbanSound Guardian – AI Noise Detection Agent
 
 UrbanSound Guardian is an AI-driven agent that analyzes urban noise, classifies sound types, scores severity, and provides actionable recommendations.
 Built using Python, FastAPI, and a lightweight ML model.

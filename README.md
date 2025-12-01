@@ -20,8 +20,6 @@ Built using **Python, FastAPI, and a lightweight ML model**, this project showca
 User Input (filename) ->FASTAPI Web App->UrbanSoundAgent->Final Analysis JSON Output
 
 
----
-
 ## 🛠️ **Installation**
 
 1. Clone the repository
@@ -43,13 +41,14 @@ python train.py
 uvicorn webapp:app --reload
 
 
-Open browser:
+**Open browser**:
 
 Web UI: http://127.0.0.1:8000
 
 API Docs: http://127.0.0.1:8000/docs
 
 🔍 **Example Output**
+
 {
   "location": "Unknown",
   "timestamp_utc": "2025-12-01T15:26:37.659669",
@@ -62,44 +61,44 @@ API Docs: http://127.0.0.1:8000/docs
   "recommended_tip_for_citizens": "Ensure construction follows permitted timings and uses noise barriers."
 }
 
-🎯 Why This Project Is Effective
+🎯 **Why This Project Is Effective**
 
-✔ Clear ML pipeline (training → prediction → output)
+    ✔ Clear ML pipeline (training → prediction → output)
+    
+    ✔ Agent-based reasoning layer
+    
+    ✔ FastAPI UI for clean demonstrations
+    
+    ✔ JSON endpoint for integrations
+    
+    ✔ Resume-ready real-world project
+    
+    ✔ Perfect for Google/Kaggle Agents Capstone
 
-✔ Agent-based reasoning layer
+📈 **Planned Improvements**
 
-✔ FastAPI UI for clean demonstrations
-
-✔ JSON endpoint for integrations
-
-✔ Resume-ready real-world project
-
-✔ Perfect for Google/Kaggle Agents Capstone
-
-📈 Planned Improvements
-
-🎵 Real audio MFCC feature extraction
-
-🤖 CNN-based urban-sound classifier
-
-📡 IoT noise sensor integration
-
-📊 Live dashboard for authorities
-
-🧠 Gemini-powered reasoning module
+    🎵 Real audio MFCC feature extraction
+    
+    🤖 CNN-based urban-sound classifier
+    
+    📡 IoT noise sensor integration
+    
+    📊 Live dashboard for authorities
+    
+    🧠 Gemini-powered reasoning module
 
 🏁 Conclusion
 
-UrbanSound Guardian demonstrates how a compact AI agent can:
-
-Analyze environmental noise
-
-Classify severity
-
-Provide meaningful insights
-
-Assist authorities and citizens
-
-Deliver results through a smooth web interface
-
-It is simple, effective, deployable, and perfect for agent-based AI demonstrations.
+    UrbanSound Guardian demonstrates how a compact AI agent can:
+    
+    Analyze environmental noise
+    
+    Classify severity
+    
+    Provide meaningful insights
+    
+    Assist authorities and citizens
+    
+    Deliver results through a smooth web interface
+    
+    It is simple, effective, deployable, and perfect for agent-based AI demonstrations.

@@ -1,23 +1,24 @@
-**🎧 UrbanSound Guardian – AI Noise Detection Agent**
+# 🎧 UrbanSound Guardian – AI Noise Detection Agent
 
-UrbanSound Guardian is an AI-driven agent that analyzes urban noise, classifies sound types, scores severity, and provides actionable recommendations.
-Built using Python, FastAPI, and a lightweight ML model.
+UrbanSound Guardian is an **AI-driven agent** that analyzes urban noise, classifies sound types, scores severity, and provides actionable recommendations.  
+Built using **Python, FastAPI, and a lightweight ML model**, this project showcases a clean, production-ready AI agent workflow.
 
-🚀 **Key Features**
+---
 
-🎯 Sound type detection (traffic, construction, sirens, machinery)
+## 🚀 **Key Features**
 
-📊 Noise severity classification (Low / Medium / High)
+- 🎯 **Sound type detection** (traffic, construction, sirens, machinery)
+- 📊 **Noise severity classification** (Low / Medium / High)
+- 🧠 **AI recommendations** for authorities & citizens
+- 🌐 **FastAPI Web App + JSON API**
+- 🕒 **Timestamp + location context**
+- ⚡ **Fast, lightweight, and deployable anywhere**
 
-🧠 AI recommendations for authorities & citizens
+---
 
-🌐 FastAPI Web App + JSON API
+## 🏗️ **Architecture Overview**
 
-🕒 Timestamp + location context
 
-⚡ Fast, lightweight, deployable
-
-🏗️ **Architecture Overview**
 User Input (filename) ->FASTAPI Web App->UrbanSoundAgent->Final Analysis JSON Output
 
 

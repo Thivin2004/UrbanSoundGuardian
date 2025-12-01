@@ -25,7 +25,6 @@ User Input (filename) ->FASTAPI Web App->UrbanSoundAgent->Final Analysis JSON Ou
 ## 🛠️ **Installation**
 
 1. Clone the repository
-```bash
 git clone https://github.com/Thivin2004/UrbanSoundGuardian.git
 cd UrbanSoundGuardian
 

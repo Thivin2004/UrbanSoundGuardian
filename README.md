@@ -19,20 +19,7 @@ Built using Python, FastAPI, and a lightweight ML model.
 
 🏗️ **Architecture Overview**
 User Input (filename) ->FASTAPI Web App->UrbanSoundAgent->Final Analysis JSON Output
- 
 
-📦 **Project Structure**
-UrbanSoundGuardian/
-│
-├── webapp.py               # FastAPI Web App
-├── train.py                # ML training script
-├── model.pkl               # Saved ML model
-├── requirements.txt        # Dependencies
-│
-└── urbansound/
-    ├── agent.py            # UrbanSoundAgent logic
-    ├── model.py            # ML classifier
-    └── audio_features.py   # Synthetic feature generator
 
 🛠️ **Installation**
 1. Clone the repository

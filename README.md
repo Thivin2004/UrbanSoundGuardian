@@ -1,5 +1,5 @@
-🎧 UrbanSound Guardian – AI Noise Monitoring Agent
-
+**🎧 UrbanSound Guardian – AI Noise Monitoring Agent
+**
 A lightweight ML-powered AI agent that detects urban noise patterns, classifies sound types, evaluates severity, and recommends actions for authorities & citizens.
 Features a simple FastAPI web interface + JSON API.
 

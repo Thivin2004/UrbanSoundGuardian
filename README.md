@@ -1,157 +1,65 @@
-**🎧 UrbanSound Guardian – AI Noise Monitoring Agent
-**
-A lightweight ML-powered AI agent that detects urban noise patterns, classifies sound types, evaluates severity, and recommends actions for authorities & citizens.
-Features a simple FastAPI web interface + JSON API.
+🎧 UrbanSound Guardian – AI Noise Detection Agent
 
-🚀 Overview
+UrbanSound Guardian is an AI-driven agent that analyzes urban noise, classifies sound types, scores severity, and provides actionable recommendations.
+Built using Python, FastAPI, and a lightweight ML model.
 
-Urban environments generate continuous noise — traffic, construction, horns, emergency sirens.
-Manual monitoring is impossible, and existing tools lack:
+🚀 Key Features
 
-Real-time classification
+🎯 Sound type detection (traffic, construction, sirens, machinery)
 
-Severity scoring
+📊 Noise severity classification (Low / Medium / High)
 
-Actionable recommendations
+🧠 AI recommendations for authorities & citizens
 
-AI-guided reasoning
+🌐 FastAPI Web App + JSON API
 
-UrbanSound Guardian solves this by combining:
+🕒 Timestamp + location context
 
-A trained ML classifier
+⚡ Fast, lightweight, deployable
 
-Rule-based severity engine
-
-An intelligent AI agent wrapper
-
-A simple FastAPI web application
-
-Users can analyze any input audio filename (simulated), and the agent predicts:
-
-Noise type
-
-Noise score
-
-Severity level
-
-Recommended action
-
-Citizen safety tips
-
-🧠 How the Agent Works
-
-The system has 3 core layers:
-
-1️⃣ ML Model (Fake Synthetic Data-Based Classifier)
-
-Trained on synthetic feature data (MFCC-like numeric vectors).
-Predicts sound class probabilities for:
-
-Traffic
-
-Siren
-
-Construction
-
-Human noise
-
-Engine noise
-
-Outputs a noise score (0–100).
-
-2️⃣ Severity & Recommendation Engine
-
-Interprets model outputs to determine:
-
-Severity Level: LOW / MEDIUM / HIGH
-
-Authority Action: e.g., deploy inspectors, check regulations
-
-Citizen Tip: e.g., avoid peak hours, use ear protection
-
-3️⃣ AI Agent Wrapper (UrbanSoundAgent)
-
-Provides:
-
-Unified analyze() method
-
-Timestamp
-
-Location handling
-
-Structured output format
-
-🏗️ Architecture
-         User Input (filename)
-                  |
-                  v
-         FastAPI Web App
-                  |
-                  v
-         UrbanSoundAgent
-    ┌─────────────┬─────────────┐
-    |             |             |
- ML Model   Severity Engine  Recommendation Engine
-    |             |             |
-    └─────────────┴─────────────┘
-                  |
-                  v
-            Final Analysis JSON
-
-🌐 Web App UI (FastAPI)
-
-Simple interface:
-
-Enter audio filename
-
-Click Analyze
-
-Receive structured result JSON
-
-📸 UI Preview
-
-(You can add screenshots later)
-
-UrbanSound Guardian 🎧
-Enter an audio file name and click analyze.
-
-traffic.wav  [Analyze]
-
-{
-  "detected_sound": "construction",
-  "noise_score": 88,
-  "severity": "HIGH",
-  ...
-}
+🏗️ Architecture Overview
+User Input (filename)
+        |
+        v
+FASTAPI Web App
+        |
+        v
+UrbanSoundAgent
+ ┌───────────────┬────────────────┬────────────────┐
+ |               |                |                |
+ML Model   Severity Engine   Recommendation Engine
+ |               |                |             
+ └───────────────┴────────────────┴────────────────┘
+        |
+        v
+Final Analysis JSON Output
 
 📦 Project Structure
 UrbanSoundGuardian/
 │
 ├── webapp.py               # FastAPI Web App
-├── main.py                 # CLI entry (optional)
-├── train.py                # ML training (synthetic)
-├── model.pkl               # Saved trained model
+├── train.py                # ML training script
+├── model.pkl               # Saved ML model
 ├── requirements.txt        # Dependencies
 │
-├── urbansound/
-│   ├── __init__.py
-│   ├── agent.py            # UrbanSoundAgent logic
-│   ├── model.py            # ML classifier
-│   └── audio_features.py   # Synthetic feature extractor
+└── urbansound/
+    ├── agent.py            # UrbanSoundAgent logic
+    ├── model.py            # ML classifier
+    └── audio_features.py   # Synthetic feature generator
 
 🛠️ Installation
-1️⃣ Clone the repository
+1. Clone the repository
 git clone https://github.com/yourusername/UrbanSoundGuardian.git
 cd UrbanSoundGuardian
 
-2️⃣ Create and activate a virtual environment
+2. Create and activate virtual environment
 python -m venv venv
 venv\Scripts\activate
 
-3️⃣ Install dependencies
+3. Install dependencies
 pip install -r requirements.txt
 
-4️⃣ (Optional) Retrain the model
+4. (Optional) Retrain ML model
 python train.py
 
 🚀 Run the Web App
@@ -160,9 +68,9 @@ uvicorn webapp:app --reload
 
 Open browser:
 
-UI → http://127.0.0.1:8000
+Web UI: http://127.0.0.1:8000
 
-API Docs → http://127.0.0.1:8000/docs
+API Docs: http://127.0.0.1:8000/docs
 
 🔍 Example Output
 {
@@ -177,39 +85,44 @@ API Docs → http://127.0.0.1:8000/docs
   "recommended_tip_for_citizens": "Ensure construction follows permitted timings and uses noise barriers."
 }
 
-🎯 Key Features
+🎯 Why This Project Is Effective
 
-✔ Lightweight ML classifier
-✔ Severity scoring
-✔ Action recommendation engine
-✔ FastAPI web UI
-✔ JSON API endpoint
-✔ Timestamp & location support
-✔ Easy to extend
-✔ Submission-ready & resume-ready
+Clear ML pipeline (training → prediction → output)
 
-📈 Future Enhancements
+Agent-based reasoning layer
+
+FastAPI UI for demos
+
+JSON endpoint for integration
+
+Resume-ready project
+
+Perfect for Kaggle Agent Capstone
+
+📈 Planned Improvements
 
 Real audio MFCC extraction
 
-Deep learning model (CNN)
+CNN-based classifier
 
-Real-time streaming input
+IoT noise sensors
 
-Integration with IoT noise sensors
+Live dashboard
 
-Dashboard for city authorities
-
-Gemini-powered reasoning module
+Gemini-powered reasoning agent
 
 🏁 Conclusion
 
-UrbanSound Guardian demonstrates how a compact AI agent can:
+UrbanSound Guardian shows how a compact AI agent can:
 
 Analyze environmental noise
 
-Score severity
+Classify severity
 
-Provide insights for public safety
+Provide meaningful insights
 
-Deliver results via a clean web interface
+Assist authorities & citizens
+
+Deliver results through an intuitive web UI
+
+It is simple, effective, and ideal for real-world agent-based AI demonstrations.

@@ -18,21 +18,8 @@ Built using Python, FastAPI, and a lightweight ML model.
 ⚡ Fast, lightweight, deployable
 
 🏗️ Architecture Overview
-User Input (filename)
-        |
-        v
-FASTAPI Web App
-        |
-        v
-UrbanSoundAgent
- ┌───────────────┬────────────────┬────────────────┐
- |               |                |                |
-ML Model   Severity Engine   Recommendation Engine
- |               |                |             
- └───────────────┴────────────────┴────────────────┘
-        |
-        v
-Final Analysis JSON Output
+User Input (filename) ->FASTAPI Web App->UrbanSoundAgent->Final Analysis JSON Output
+ 
 
 📦 Project Structure
 UrbanSoundGuardian/

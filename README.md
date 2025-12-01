@@ -20,10 +20,15 @@ Built using **Python, FastAPI, and a lightweight ML model**, this project showca
 User Input (filename) ->FASTAPI Web App->UrbanSoundAgent->Final Analysis JSON Output
 
 
-🛠️ **Installation**
+---
+
+## 🛠️ **Installation**
+
 1. Clone the repository
-git clone https://github.com/yourusername/UrbanSoundGuardian.git
+```bash
+git clone https://github.com/Thivin2004/UrbanSoundGuardian.git
 cd UrbanSoundGuardian
+
 
 2. Create and activate virtual environment
 python -m venv venv
@@ -58,35 +63,35 @@ API Docs: http://127.0.0.1:8000/docs
   "recommended_tip_for_citizens": "Ensure construction follows permitted timings and uses noise barriers."
 }
 
-🎯 **Why This Project Is Effective**
+🎯 Why This Project Is Effective
 
-Clear ML pipeline (training → prediction → output)
+✔ Clear ML pipeline (training → prediction → output)
 
-Agent-based reasoning layer
+✔ Agent-based reasoning layer
 
-FastAPI UI for demos
+✔ FastAPI UI for clean demonstrations
 
-JSON endpoint for integration
+✔ JSON endpoint for integrations
 
-Resume-ready project
+✔ Resume-ready real-world project
 
-Perfect for Kaggle Agent Capstone
+✔ Perfect for Google/Kaggle Agents Capstone
 
 📈 Planned Improvements
 
-Real audio MFCC extraction
+🎵 Real audio MFCC feature extraction
 
-CNN-based classifier
+🤖 CNN-based urban-sound classifier
 
-IoT noise sensors
+📡 IoT noise sensor integration
 
-Live dashboard
+📊 Live dashboard for authorities
 
-Gemini-powered reasoning agent
+🧠 Gemini-powered reasoning module
 
-🏁 **Conclusion**
+🏁 Conclusion
 
-UrbanSound Guardian shows how a compact AI agent can:
+UrbanSound Guardian demonstrates how a compact AI agent can:
 
 Analyze environmental noise
 
@@ -94,8 +99,8 @@ Classify severity
 
 Provide meaningful insights
 
-Assist authorities & citizens
+Assist authorities and citizens
 
-Deliver results through an intuitive web UI
+Deliver results through a smooth web interface
 
-It is simple, effective, and ideal for real-world agent-based AI demonstrations.
+It is simple, effective, deployable, and perfect for agent-based AI demonstrations.
